@@ -12,8 +12,8 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 CONFIG = {
-	:width 		=> 400, 
-	:height 	=> 400, 
+	:width 		=> 800, 
+	:height 	=> 600, 
 	:resizable 	=> false, 
 	:title 		=> "Color Music Tools",
 }
@@ -42,7 +42,22 @@ class MusicalColors < Shoes
       para "Adding a new, colorful, dimension to the old ruts of our musical knowledge."
     end
     stack do
-      para 'Check out: ', link(strong('Scales'), :click => '/scales'), ', ', link(strong('Intervals'), :click => 'intervals')
+      para 'Check out: ', link(strong('Scales'), :click => '/scales'), ', ', link(strong('Intervals'), :click => '/intervals')
+    end
+  end
+  def intervals
+    stack do
+      title "Musical Intervals"
+      subtitle "Demonstrating fundamental intervals."
+      para "Using simple addition, one can create triads and other chords using the basic building blocks of intervals."
+      para link(strong('Index'), :click => '/')
+    end
+  end
+  def scales
+    stack do
+      title "Diatonic Scales."
+      subtitle "Scale calculator based on tonic."
+      para link(strong('Index'), :click => '/')
     end
   end
 end
