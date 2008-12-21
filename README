@@ -8,6 +8,7 @@ Important steps:
     * Determine applications of the color wheel for various tonal quantizations.
           o e.g. Western Major Diatonic natural tones: ROYGBIV → ABCDEFG
           o e.g. Western Major circle of keys: ROYGBIV → agc-b-a-db
+          o color from scale: ROYGBIV  → tonic, first, second, etc
     * Decide upon standardized unicode notation for musical notes and modifiers.
     * Lay out the interval system
           o Design geometrical icons to represent scale degrees.
