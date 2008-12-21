@@ -31,6 +31,8 @@ class MusicalColors < Shoes
   url '/', :index
   url '/intervals', :intervals
   url '/scales', :scales
+  url '/rhythm', :rhythm
+  url 'write', :write
   def index
     background green..orange, :angle => 77
     title "Music Theory Colorized!", :stroke => blue, :weight => 'bold'
@@ -42,7 +44,7 @@ class MusicalColors < Shoes
       para "Adding a new, colorful, dimension to the old ruts of our musical knowledge."
     end
     stack do
-      para 'Check out: ', link(strong('Scales'), :click => '/scales'), ', ', link(strong('Intervals'), :click => '/intervals')
+      para 'Check out: ', link(strong('Scales'), :click => '/scales'), ', ', link(strong('Intervals'), :click => '/intervals'), ', ', link(strong('Rhythm'), :click => '/rhythm')
     end
   end
   def intervals
@@ -60,5 +62,33 @@ class MusicalColors < Shoes
       para link(strong('Index'), :click => '/')
     end
   end
+  def rhythm
+    stack do
+      title "Rhythmic divisions."
+      subtitle "Pulsation modulation."
+      para link(strong('Index'), :click => '/')
+    end
+  end
+  def write
+    stack do
+      title "Create musical arrangements."
+      subtitle "Intuitive compositional aides."
+      para link(strong('Index'), :click => '/')
+    end
+  end
+#  def Ionian
+#  end
+#  def Dorian
+#  end
+#  def Phrygian
+#  end
+#  def Lydian
+#  end
+#  def Mixolydian
+#  end
+#  def Aeolian
+#  end
+#  def Locrian
+#  end
 end
 Shoes.app CONFIG
