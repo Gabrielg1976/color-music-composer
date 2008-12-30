@@ -18,5 +18,5 @@
 # should the reference note (C[0] and/or C[5]) ever change in the MIDI spec or otherwise.
 
 # Another construction of the chromatic, demonstrating vibrational frequencies
-# will possibly be desirable. I am unsure of the formula for the equal tempered 
-# frequency quantizations of the chromatic scale. 
+# will possibly be desirable. See: http://en.wikipedia.org/wiki/Piano_key_frequencies
+# The piano key frequencies can constitute another array series.
