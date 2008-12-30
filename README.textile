@@ -1,32 +1,47 @@
+﻿h1. The premise of musical colors:
+h3. See, through cubed eye.
+The word "chromatic" implies color or color-ability. Music notation and teaching methods are, mostly, devoid of color (desaturated.) We can, as the Tao Te Ching holds it, "follow old ruts" of music theory and add an extra dimension: chroma. 
 
-The premise of musical colors:
+h2. The software design:
 
-The word “chromatic” implies color or color-ability. Music notation and teaching methods are, mostly, devoid of color (or desaturated.) We can, as the Tao Te Ching holds it, “follow old ruts” of music theory and add an extra dimension of chroma.
-The software design:
 Important steps:
+* Determine applications of the <b>color wheel</b> for various <i>tonal quantizations</i>.
+** e.g. Western Major Diatonic natural tones: ROYGBIV → ABCDEFG
+** e.g. Western Major circle of keys: ROYGBIV → agc-b-a-db
+** color from scale degree: ROYGBIV → tonic,first, second, etc
 
-    * Determine applications of the color wheel for various tonal quantizations.
-          o e.g. Western Major Diatonic natural tones: ROYGBIV → ABCDEFG
-          o e.g. Western Major circle of keys: ROYGBIV → agc-b-a-db
-          o color from scale: ROYGBIV  → tonic, first, second, etc
-    * Decide upon standardized unicode notation for musical notes and modifiers.
-    * Lay out the interval system
-          o Design geometrical icons to represent scale degrees.
-          o Formulate equations to output higher level intervals given smaller interval combinations.
-    * Derive chord combinations from intervals of the Major scale.
-          o Organize chord types into a hierarchical map of deviations (additions and mutations) of the Major triad.
-    * Design functions to map out scales and modes based on western theory; given a tonic.
-          o Should the tonic be considered the first degree?
-          o Would considering the tonic the zeroth degree be detrimental to musical calculation?
-    * Output data.
-          o Audio output :)
-          o MIDI output.
-          o Text output (note names, intervals, etc)
-          o Instrument tabulature.
-          o Musical Notation
-    * Audio engine.
-          o ALSA and or JACK
-          o Moduar
-          o Compatible with open source plugins (LADSPA,&c)
+* Decide upon standardized <b>unicode notation</b> for musical <i>notes and modifiers</i>.
 
+* Lay out the <b>interval</b> system:
+** Design geometrical icons to represent scale degrees.
+** Formulate equations to output higher level intervals given smaller interval combinations.
 
+* Derive chord combinations from intervals of the Major scale.
+** Organize <b>chord</b> types into a <i>ontological map</i> of deviations (additions and mutations) of the Major triad.
+
+* Design <i>functions</i> to map out <b>scales and modes</b> based on western theory; given a tonic (rhizome).
+** Should the tonic be considered the first degree?
+** Would considering the tonic the zeroth degree be detrimental to musical calculation?
+** Consider varoius genetic algorithms to evolve additional musical compositions.
+
+* Output data.
+** Audio output :)
+** MIDI output.
+** Text output (note names, intervals, etc)
+** Instrument tabulature.
+** Musical Notation
+
+* Interface
+** Synth interface with generic widgets
+** Piano Roll Sequencer
+** Clef notation editor
+
+* Audio engine.
+** ALSA and or JACK
+** Moduar
+** Compatible with open source plugins (LADSPA,&c)
+
+* Networking
+** Ability to share compositions (decentralized?)
+** Ability for push/pull collaboration on shared projects.
+** XMPP communications protocol?
